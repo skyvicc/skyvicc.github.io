@@ -1,0 +1,119 @@
+/*
+#301934
+#00ff00
+#5A5A5A
+#ADD8E6
+#FFAC1C
+*/
+:root{
+    --font-color: #FFAC1C;
+    --color: #301934;
+    --background-color:#1d1934 ;
+}
+*{
+    font-family: sans-serif;
+}
+html{
+    background-color: var(--background-color);
+    transition: 5s;
+}
+a{
+    text-decoration: none;
+}
+
+.upperSection{
+    padding: 0.5rem 0rem;
+    background-color: #552a5d;
+    filter: drop-shadow(3px 3px 3px);
+    box-sizing: border-box;
+}
+
+.top,.c{
+    font-size: 2.4rem;
+    margin:auto 6.6rem ;
+}
+.c{
+    cursor: pointer;
+}
+span, a{
+    color: #7be2ff;
+    transition: 400ms;
+}
+span:hover, a:hover{
+    color: rgb(242, 141, 17);
+}
+
+.l{
+    color: var(--font-color);
+    font-size:3rem;
+    font-weight: bold;
+}
+button{
+    height: 25.5rem;
+    width: 35rem;
+    /* max-width: 36rem; */
+    /* max-height: 26rem; */
+    border: 0.3rem solid rgb(211, 208, 208);
+    margin-left:2rem;
+    margin-bottom: 2rem;
+    background-color: var(--color);
+    border-radius: 5%;
+    transition: 900ms;
+    box-shadow: 8px 8px 16px 1px black;
+}
+button:hover{
+    color: #00f2ff;
+    background-color:#48234f ;
+    border:#00f2ff solid;
+    cursor: pointer;
+    transform: scale(105%);
+}
+main{
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    transition: 2s;
+}
+.labeling{
+    margin-top:1rem;
+    color: rgb(174, 174, 174);
+    font-size:1rem;
+}
+
+.comDiv{
+    display: none;
+}
+.innerConstacts{
+    margin:3rem auto;
+    width: 50%;
+    filter:drop-shadow(3px 5px 3px);
+    border:rgb(166, 200, 207) solid 1px;
+    padding: 2rem;
+    background-color: var(--color);
+}
+.return{
+    width: 100vh;
+    height: 2rem;
+    position: relative;
+    left: 20.3%;
+    border-radius: 0;
+    color: white;
+    border: 1px solid  white;
+}
+.return:hover{
+    border: solid 1px #0df6ea;
+}
+.med{
+    width:5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+.cont{
+    display: inline;
+    font-size: 2.3rem;
+    color: white;
+    margin: 2.5rem;
+}
+.cont:hover{
+    color: white;
+}
