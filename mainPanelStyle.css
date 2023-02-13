@@ -91,11 +91,11 @@ main{
     background-color: var(--color);
 }
 .return{
-    width: 50vh;
-    /* margin-left: 15%; */
+    width: 20rem;
+    /* margin-left: 1rem; */
     height: 2rem;
     position: relative;
-    left: 20.3%;
+    left:33.5%;
     border-radius: 0;
     color: white;
     border: 1px solid  white;
