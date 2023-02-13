@@ -152,9 +152,9 @@ main{
         padding: 0rem;
     }
     .return{
-        width:30%;
+        width:50%;
         position:absolute;
         /* left: 0%; */
-        margin: auto 0;
+        margin: auto;
     }
 }
