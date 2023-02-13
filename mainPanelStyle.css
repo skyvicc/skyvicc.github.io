@@ -124,6 +124,7 @@ main{
     .top,.c{
         font-size: 1.2rem;
         margin:auto 6rem ;
+        text-decoration:underline;
     }
     button{
         height: 14.75rem;
@@ -134,5 +135,20 @@ main{
     }
     .labeling{
         font-size: 0.5rem;
+    }
+    .innerConstacts{
+        width: 100vw;
+    }
+    .med{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .cont{
+        font-size: 1.5rem;
+    }
+    .return{
+        width:30%;
+        position:absolute;
+        left: 30%
     }
 }
