@@ -122,11 +122,17 @@ main{
         width: 100vw;
     }
     .top,.c{
-        font-size: 2rem;
-        margin:auto 6.6rem ;
+        font-size: 1.2rem;
+        margin:auto 6rem ;
     }
     button{
         height: 14.75rem;
-    width: 19.5rem;
+        width: 19.5rem;
     }
-  }
+    .l{
+        font-size: 2rem;
+    }
+    .labeling{
+        font-size: 0.5rem;
+    }
+}
