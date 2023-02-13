@@ -48,3 +48,27 @@ html{
 .lDate{
     margin-bottom:3rem;
 }
+
+@media only screen and (max-width: 767px){
+    .lmain{
+        margin-top: 2.5rem;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        width: 100%;
+    }
+    .lTitle {
+        padding: 1.5rem 0.5rem 0.5rem 0.5rem ;
+        font-size: 2rem;
+    }
+    .lDescription{
+        padding:1.2rem;
+        font-size: 1rem;
+    }
+    .lDate{
+        position: relative;
+        bottom:85%;
+        left: 68%;
+        padding-bottom: 1rem;
+        color: gray
+    }
+}
