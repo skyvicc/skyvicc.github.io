@@ -71,7 +71,7 @@ button:hover{
 .op{
     padding-top: 3rem;
     font-size: 2rem;
-    color: rgb(235, 18, 184) ;
+    color: rgb(82, 103, 138) ;
     transition: 500ms;
     margin:0rem ;
     padding: 1rem;
@@ -80,12 +80,12 @@ button:hover{
 }
 .op:hover{
     cursor: pointer;
-    color: rgb(117, 22, 95) ;
+    color: rgb(105, 78, 99);
 }
 .op::before{
     content: counter(count);
 }
 div{
     margin-top: 2rem;
-    border-top:solid white;
+    border-top:solid white 1px;
 }
