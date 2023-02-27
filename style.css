@@ -1,0 +1,91 @@
+:root{
+    counter-reset: count;
+}
+*{
+    font-family:sans-serif;
+    background-color: rgb(14, 12, 20);
+}
+p, .firstBigSection, button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+p{
+    margin-bottom: 0rem;
+    font-size: 1.5rem;
+    color: white;
+}
+.intro{
+    color: cyan;
+    font-size: 2rem;
+}
+.firstBigSection{
+    padding:1rem;
+    border-bottom: solid white 1px;
+}
+section{
+    /* display: none; */
+    color: white;
+    font-size: 2rem;
+}
+input{
+    width: 5rem;
+    height: 2rem;
+    color: rgb(73, 138, 162);
+    background-color:rgb(26, 24, 33) ;
+    font-size: 2rem;
+    margin:0.5rem;
+    border: transparent;
+    outline: none;
+    transition: 500ms;
+}
+input:hover{
+    background-color:rgb(35, 33, 43);
+    color: rgb(71, 171, 208);
+    transform: scale(130%);
+}
+.continueButton01,.checkButton01, .continueButton02{
+    position: fixed;
+    left: 88.5%;
+    bottom: 8%;
+    background-color: transparent;
+    color: rgb(106, 106, 106);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: 600ms;
+    outline: none;
+    border: transparent;
+}
+.checkButton01{
+    bottom:16%;
+}
+button:hover{
+    color: rgb(25, 185, 185);
+    cursor: pointer;
+}
+.fIntro{
+    color: cyan;
+    font-size: 4rem;
+}
+.op{
+    padding-top: 3rem;
+    font-size: 2rem;
+    color: rgb(235, 18, 184) ;
+    transition: 500ms;
+    margin:0rem ;
+    padding: 1rem;
+    counter-increment: count;
+    
+}
+.op:hover{
+    cursor: pointer;
+    color: rgb(117, 22, 95) ;
+}
+.op::before{
+    content: counter(count);
+}
+div{
+    margin-top: 2rem;
+    border-top:solid white;
+}
