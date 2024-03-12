@@ -889,78 +889,49 @@ footer p{
         margin-left: 0.5rem;
     }
     /* opening section */
-    .opening-section{
-        color: white;
-        height: 100vh;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7), -5px 5px 15px rgba(0, 0, 0, 0.7);
-    }
-    .opening-img{
-        z-index: -1;
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        position: absolute;
-    }
-    .opening-text{
-        border: solid 1px transparent;
-    }
-    .opening-texts-wrapper{
-        box-shadow: inset 4px 4px 30px black;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding-bottom: 0.5rem;
-        width: 100vw;
-        animation: falling 0.8s ease-in-out forwards
-    }
+
     .opening-main-text{
-        margin-top: 20rem;
-        /* font-size: 1.7rem; */
+        margin-top: 17rem;
         text-align: left;
         padding-left: 1rem;
         padding-right: 0;
     }
-    .opening-main-text p, .opening-main-text h1, .opening-secondary-text p{
-
+    .opening-main-text p{
+        margin-top: 0.5rem;
+        font-size: 2.2rem;
     }
     .opening-main-text h1{
         padding-top: 1rem;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     .opening-main-text p{
         font-size: 1.2rem;
     }
     .opening-secondary-text{
         text-align: right;
-        /* margin-top: 2rem; */
-        /* margin-bottom: 0.5rem; */
         margin: 2rem 1rem 0.5rem auto;
         padding-left: 0;
         font-size: 1.3rem;
     }
+
     /* .about section */
     .about-section{
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: block;
         z-index: 2;
-        background: linear-gradient(90deg, rgb(241, 241, 241), rgb(255, 255, 255), rgb(245, 245, 245) 50%, rgb(0, 0, 0)50%, black 100%);
+        background: white;
         box-shadow: inset 5px 5px 20px gray;
         margin: 0;
-        overflow: auto;
-    }
-    .about-left-div{
-        opacity: 0;
-        text-shadow: 3px 3px 25px black;
+        overflow: hidden;
     }
     .about-left-div h2, .about-left-div p{
         padding: 0 2rem ;
     }
     .about-left-div h2{
         padding-top: 3rem;
-        font-size: 3rem;
+        font-size: 2.6rem;
     }
     .about-left-div p{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         text-align: justify;
     }
     .about-left-div hr{
@@ -975,111 +946,47 @@ footer p{
         background-color: white;
     }
     .about-right-div{
-        padding-top: 1rem;
-        background: linear-gradient(135deg,rgb(37, 37, 37)  0%, rgb(37, 37, 37) 10%,rgb(20, 20, 20) 20%,  black 100%);
-        box-shadow: -5px -5px 10px rgba(27, 27, 27, 0.699);
-    }
-    .about-right-div img{
-        width: 90%;
-        height: 80%;
-        object-fit: cover;
-        display: block;
-        position: relative;
-        transform: translate(-50%, -50%);
-        top: 52%;
-        left: 50%;
-        /* animation: animate 2s linear forwards; */
+        display: none;
     }
     
     /* products and services */
-    .products-and-services{
-        width: 100%;
-        height: 100vh;
-        margin: 0;
-        box-shadow: inset 5px 5px 30px rgba(0, 0, 0, 0.575);
-    }
     .products-and-services h2{
-        font-size: 2.8rem;
-        margin: 4.5rem 0 0.5rem 0;
-        text-align: center;
-        padding: 0;
+        font-size: 2.5rem;
     }
     .products-and-services hr{
-        width: 90%;
+        width: calc(100vw - 1rem);
     }
     .items-container{
         width: 75%;
-        display: flex;
-        justify-content: center;
-        padding: 0 5%;
+        padding: 0;
+        display: block;
         
     }
     .item{
-        box-shadow: 5px 5px 0px black;
-        margin: 2rem 0.7rem;
-        padding: 0.5rem 1rem;
-        text-align: center;
-        height: fit-content;
-        width: 100%;
-    }
-    .item:hover h3{
-        border-bottom-color: black;
+        margin: 1.3rem auto;
+        padding: 0 1rem;
+        width: 95%;
     }
     .item h3{
-        font-size: 1.8rem;
-        margin: 0.5rem 0;
-        border-bottom: solid rgba(255, 255, 255, 0) 1px;
+        font-size: 1.7rem;
     }
     .item img{
-        width: 100%;
-        height: 13rem;
-        display: block;
-        object-fit: cover;
+        display: none;
     }
     .item hr{
-        margin: 0.3rem auto 0 auto;
+        display: none;
     }
     .item p{
-        padding: 0 0 0.5rem 0;
-        margin: 0.3rem auto;
-        width: 85%;
-        border-bottom: solid 1px rgb(0, 0, 0);
+        display: none;
     }
-    .item button{
-        background-color: white;
-        font-size: 1rem;
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
-        width: 75%;
-        margin-bottom: 0.5rem;
-    
-    }
-    .items-control-div{
-        display: grid;
-        grid-template-rows: 2;
-    }
-    .dot-wrapper{
-        display: flex;
-        justify-content: center;
-        padding-top: 0.3rem;
-    }
-    .dot{
-        width: 0.7rem;
-        height: 0.7rem;
-        border-radius: 50%;
-        margin: 0 0.25rem;
-    }
-    .dot:nth-of-type(1),
-    .dot:nth-of-type(2),
-    .dot:nth-of-type(3){
-        background-color: black;
-    }
+
     .items-view-control-div{
         display: flex;
         justify-content: space-between;
-        width: 50%;
+        width: 75%;
         margin: 1rem auto 0 auto;
     }
+
     .items-view-control-div button{
         width: 20%;
         color: white;
@@ -1091,11 +998,11 @@ footer p{
         box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.781);
     }
     .full-inventory-div-wrapper{
-        width: 100%;
+        width: 20%;
     }
     .full-inventory-div-wrapper button{
         display: block;
-        width: 60%;
+        width: fit-content;
         background-color: white;
         color: black;
         border: none;
@@ -1107,10 +1014,13 @@ footer p{
     .full-inventory-div-wrapper button:hover{
         background-color: rgb(0, 0, 0);
         color: white;
-        width: 80%;
+        width: fit-content;
         box-shadow: none;
         border-left: solid 10px black;
         border-right: solid 10px black;
+    }
+    .items-control-div hr{
+        display: none;
     }
     /* contact section */
     .contact-section{
@@ -1563,7 +1473,7 @@ footer p{
         }
     }
     html{
-        background-color: purple;
+        /* background-color: purple; */
     }
 }
   
