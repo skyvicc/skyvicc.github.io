@@ -803,6 +803,12 @@ footer p{
 .mobile-nav{
     display: none;
 }
+.products-and-services-mobile{
+    display: none;
+}
+.contact-section-mobile{
+    display: none;
+}
 /* MEDIA QUERIES, OTHER SCREEN SIZES CSS HERE: */
 
 @media only screen and (max-width: 1025px) { /* and 650px on the y axis */ 
@@ -909,7 +915,8 @@ footer p{
         display: none;
     }
     .products-and-services-mobile{
-        border: solid 1px black
+        border: solid 1px black;
+        display: block;
     }
     .item-mobile{
         margin-top: 3rem;
@@ -941,7 +948,7 @@ footer p{
         margin: 1rem auto;
         font-size: 1.2rem;
         background-color: white;
-        border: solid 1px black;
+        border: solid 2px black;
         width: 40%;
     }
     .item-mobile hr{
@@ -950,68 +957,72 @@ footer p{
         margin: 0.5rem auto;
     }
     /* contact section */
-
-    .contact-divs-wrapper{
-        background-color: black;
-        width: 100%;
-        height: 60%;
-        margin-top: 2rem;
-        color: white;
-        display: block;
-        grid-template-columns: 1fr 1fr;
-        padding: 1.5rem 0 2rem 0;
-    }
-    .contact-left-div{
+    .contact-section{
         display: none;
     }
-
-    .contact-right-div{
-        height: 90%;
+    .contact-section-mobile{
+        display: block;
+        background-color: rgb(20, 20, 20);
+        color: white;
+        min-height: 100vh;
+        /* padding-top: 10rem; */
     }
-    .text-info{
-        border-left: none;
-        border-right: none;
-        margin-right: 0;
+    .contact-section-mobile h4{
+        font-size: 1.4rem;
+        margin: 1rem 0 0.5rem 1.5rem;
     }
-    .text-info h3{
+    .contact-section-mobile ul{
+        /* padding-top: 4rem; */
+        margin-top: 3rem;
         font-size: 1.5rem;
-        margin: 1rem 0 0.2rem 1.5rem;
+        color: rgb(255, 0, 0);
+        font-weight: bolder;
     }
-    .contact-button-wrapper button{
-        transform: translate(7%, 50%);
-    }
-    .contact-button-wrapper button:hover{
-        transform: translate(7%, 25%);
-    }
-    .social-media-div{
-        margin-top: 0.6rem;
-    }
-    /*  */
-    .back-to-the-top-btn{
-        padding: 0.3rem 2rem;
-        width: fit-content;
-    }
-    
-    /* js triggered animations */
-    .products-window{
-        width: 100%;
-        height: 100%;
-    }
-    .general-product-listing{
-        grid-template-columns: 1fr;
 
+    .contact-section-mobile p{
+        font-size: 1.4rem;
+        margin: 0;
+        margin-left: 1.5rem;
+        margin-bottom: 2rem;
+    }    
+    .contact-section-mobile p:last-of-type{
+        margin-bottom: 1.3rem;
     }
-    .products-window img{
-        width: 65%;
+    .contact-section-mobile img{
+        height: 2rem;
+        width: 2rem ;
     }
-    .bottom-btn-wrapper-div button{
-        width: 35%;
-    }
-    
-    /* NO MEMDIA QUERIES FOR OVER 1100 / 650 */
-    .work-schedule-wrapper table{
+    .contact-section-mobile table{
         border: solid 1px white;
-        background-color: black;
+        width: 100%;
+        /* margin-top: 3rem; */
+    }
+    .contact-section-mobile table td:first-of-type{
+        /* width: 75%; */
+    }
+    .contact-section-mobile table td{
+        border-bottom: solid 1px white;
+        font-size: 1.2rem;
+        padding: 0.3rem 0;
+    }
+    .contact-section-mobile table tr td:first-of-type{
+        padding-left: 1rem;
+    }
+    .mobile-social-media-div{
+        width: fit-content;
+        margin-left: 2rem;
+        filter: invert(100%)
+    }
+    .mobile-social-media-div img{
+        margin-left: 1rem;
+    }
+    .contact-section-mobile button{
+        display: block;
+        margin: 2rem auto 1rem auto;
+        font-size: 1.2rem;
+        background-color: white;
+        border: solid 2px white;
+        padding: 0.1rem 3rem
     }
 }
   
