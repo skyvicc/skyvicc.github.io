@@ -909,7 +909,8 @@ footer p{
         width: calc(100vw - 1rem);
     }
     .items-container{
-        width: 100%;
+        /* width: 90%; */
+        /* margin: 0 auto; */
         padding: 0;
         display: block;    
     }
@@ -948,6 +949,16 @@ footer p{
     }
     .items-control-div hr{
         display: none;
+    }
+    .buttons-container{
+        width: 100%;
+        overflow-x: auto;
+    }
+    .buttons-container button:first-of-type{
+        margin-left: 5rem;
+    }
+    .buttons-container button:last-of-type{
+        margin-right: 3rem;
     }
     /* contact section */
 
