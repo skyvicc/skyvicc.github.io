@@ -840,6 +840,9 @@ footer p{
         transform: translate(0%, -20%);
         margin-left: 0.5rem;
     }
+    section{
+        border: solid 1px black
+    }
     /* opening section */
 
     .opening-main-text{
