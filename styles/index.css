@@ -270,7 +270,7 @@ nav span p:hover{
 
 /* products and services */
 .products-and-services{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     margin: 0;
     box-shadow: inset 5px 5px 30px rgba(0, 0, 0, 0.575);
@@ -909,10 +909,9 @@ footer p{
         width: calc(100vw - 1rem);
     }
     .items-container{
-        width: 75%;
+        width: 100%;
         padding: 0;
-        display: block;
-        
+        display: block;    
     }
     .item{
         margin: 1.3rem auto;
