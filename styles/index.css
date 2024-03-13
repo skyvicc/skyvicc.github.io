@@ -905,63 +905,49 @@ footer p{
     }
     
     /* products and services */
-    .products-and-services h2{
-        font-size: 2.5rem;
-    }
-    .products-and-services hr{
-        width: calc(100vw - 1rem);
-    }
-    .items-container{
-        /* width: 90%; */
-        /* margin: 0 auto; */
-        padding: 0;
-        display: block;    
-    }
-    .item{
-        margin: 1.3rem auto;
-        padding: 0 1rem;
-        width: 95%;
-    }
-    .item h3{
-        font-size: 1.7rem;
-    }
-    .item img{
+    .products-and-services{
         display: none;
     }
-    .item hr{
-        display: none;
+    .products-and-services-mobile{
+        border: solid 1px black
     }
-    .item p{
-        display: none;
+    .item-mobile{
+        margin-top: 3rem;
     }
-
-    .items-view-control-div{
+    .item-mobile:first-of-type{
+        margin-top: 4rem;
+    }
+    .item-mobile:last-of-type{
+        margin-bottom: 3rem;
+    }
+    .item-mobile img{
         width: 75%;
+        height: 35vh;
+        display: block;
+        margin: 1rem auto 0 auto;
+        object-fit: cover;
+        border: solid 5px white;
+        border: solid 5px rgb(255, 255, 255);
+        box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.678);
     }
-
-    .items-view-control-div button{
-        width: 30%;
+    .item-mobile p{
+        text-align: center;
+        font-size: 1.7rem;
+        margin: 0;
+        margin-top: 1rem;
     }
-    .full-inventory-div-wrapper{
-        width: auto;
-
+    .item-mobile button{
+        display: block;
+        margin: 1rem auto;
+        font-size: 1.2rem;
+        background-color: white;
+        border: solid 1px black;
+        width: 40%;
     }
-    .full-inventory-div-wrapper button{
-        width: fit-content;
-        border: solid black 1px;
-    }
-    .items-control-div hr{
-        display: none;
-    }
-    .buttons-container{
-        width: 100%;
-        overflow-x: auto;
-    }
-    .buttons-container button:first-of-type{
-        margin-left: 5rem;
-    }
-    .buttons-container button:last-of-type{
-        margin-right: 3rem;
+    .item-mobile hr{
+        width: 75%;
+        border: solid 1px black;
+        margin: 0.5rem auto;
     }
     /* contact section */
 
