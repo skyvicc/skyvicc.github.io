@@ -7,20 +7,33 @@
     <link rel="stylesheet" href="styles/index.css" />
 </head>
 <body>
-        <nav>
-            <span class="buisnes"><h1>Book store</h1></span>
-            <span>
-                <p class="nav-destination">Home</p>
-                <p class="nav-destination">About</p>
-                <p class="nav-destination">Products</p>
-                <p class="nav-destination">Contact</p>
-            </span>
-        </nav>
-        <div class="mobile-nav">
-            <img src="images/lines.png" />
-            <h1>Book Store</h1>
-        </div>
+
         <main>
+            <nav>
+                <span class="buisnes"><h1>Book store</h1></span>
+                <span>
+                    <p class="nav-destination">Home</p>
+                    <p class="nav-destination">About</p>
+                    <p class="nav-destination">Products</p>
+                    <p class="nav-destination">Contact</p>
+                </span>
+            </nav>
+            <div class="mobile-nav">
+                <img src="images/lines.png" class="mobile-nav-lines"/>
+                <h1>Book Store</h1>
+            </div>
+            <div class="mobile-nav-container">
+                <h1>Book Store</h1>
+                <span class="mobile-destionation-wrapper">
+                    <p class="mob-nav-home">Home</p>
+                    <p class="mob-nav-about">About</p>
+                    <p class="mob-nav-products">Products</p>
+                    <p class="mob-nav-contact">Contact</p>
+                </span>
+                <hr />
+                <button class="mobile-nav-close-btn">close</button>
+                <hr />
+            </div>
             <!-- opening section  -->
             <section class="opening-section">
                 <img src="images/openingImage.jpg" alt="" class="opening-img" />
@@ -71,7 +84,7 @@
                         <button class="view-all-btn">View All</button>
                     </div>
                     <div class="item item-03">
-                        <h3>We make copies</h3>
+                        <h3>Copies</h3>
                         <img src="images/service-copies.jpg" alt="" />
                         <hr />
                         <p>Total items: 100</p>
@@ -182,7 +195,6 @@
                         <tr><td>Suterday</td><td>00:00 - 00:00 </td></tr>
                         <tr><td>Sunday</td><td>00:00 - 00:00 </td></tr>
                     </table>
-                    <button class="work-schedule-close-btn">Hide</button>
                 </div>
                 <hr />
                 <button class="back-to-the-top-btn">Back to the Top</button>
@@ -210,8 +222,9 @@
                     <img src="images/4747495_linked in_social media_networking_icon.png" />
                 </div>
                 <hr />
-                <button>top</button>
+                <button class="mob-back-to-top">top</button>
             </section>
+            <footer><p>Created by letabs</p></footer>
         </main>
         <div class="products-window">
             <h3>Stationery</h3>
@@ -327,10 +340,7 @@
                         <p>Price: <span>0.39€</span></p>
                     </div>
                     <!--  -->
-                    
-                    
-                    
-                    
+
                 </div>
 
             </div>
@@ -340,7 +350,6 @@
                 <button>Next item</button>
             </div>
         </div>
-        <footer><p>Created by letabs</p></footer>
 </body>
 <script src="functionality/index.js"></script>
 </html>
