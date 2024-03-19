@@ -1,4 +1,3 @@
-
 :root{
     --bg-color: rgb(255, 255, 255);
 
@@ -780,7 +779,7 @@ footer p{
     top: 50%;
     /* left: calc(0% + 30vw); */
     z-index: 20;
-    width: 60vw;
+    width: 90vw;
     height: 102vh;
     text-align: center;
     box-shadow: 
@@ -791,10 +790,10 @@ footer p{
 }
 @keyframes mobile-slider {
     0%{
-        left:  calc(0% - 30vw);
+        left:  calc(0% - 45vw);
     }
     100%{
-        left: calc(0% + 30vw);
+        left: calc(0% + 45vw);
     }
 }
 .mobile-nav-container h1{
