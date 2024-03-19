@@ -1,21 +1,11 @@
 :root{
     --bg-color: rgb(255, 255, 255);
-    --pop-window-shadow-positive-value: 25px;
-    --pop-window-shadow-negative-value: -25px;
-    --pop-window-shadow-spread-value: 10px;
-    --pop-window-shadow-color: rgba(0, 0, 0, 0.589);
 
-    --pop-window-shadow: 
-        var(--pop-window-shadow-positive-value) var(--pop-window-shadow-positive-value) var(--pop-window-shadow-spread-value) var(--pop-window-shadow-color);
-        /* var(--pop-window-shadow-negative-value) var(--pop-window-shadow-negative-value) var(--pop-window-shadow-spread-value) var(--pop-window-shadow-color); */
-        /* var(--pop-window-shadow-negative-value) var(--pop-window-shadow-positive-value) var(--pop-window-shadow-spread-value) var(--pop-window-shadow-color), */
-        /* var(--pop-window-shadow-positive-value) var(--pop-window-shadow-negative-value) var(--pop-window-shadow-spread-value) var(--pop-window-shadow-color); */
-
+    --pop-window-shadow: 25px 25px 10px rgba(0, 0, 0, 0.589)
     }
 html{
     background-color: var(--bg-color);
     scroll-behavior: smooth;
-    /* scroll-behavior: ; */
     overflow-x: hidden;
 }
 html *{
@@ -30,6 +20,13 @@ html::-webkit-scrollbar-button , html * ::-webkit-scrollbar-button{
 html::-webkit-scrollbar-thumb, html * ::-webkit-scrollbar-thumb{
     background: linear-gradient(rgb(63, 63, 63), gray , rgb(66, 66, 66));
     border: solid 1px white;
+}
+body{
+    background: linear-gradient(100deg, rgb(37, 37, 37), rgb(14, 14, 14) ,rgb(2, 2, 2));
+}
+main{
+    background-color: var(--bg-color);
+
 }
 /*  */
 /* Compact */
@@ -73,7 +70,7 @@ section,
     margin: 0;
     padding: 0;
 }
-
+.about-section,
 .about-left-div hr,
 .products-and-services,
 .products-and-services hr,
@@ -122,7 +119,7 @@ nav span p,
 /*  */
 
 nav{
-    background-color: white;
+    background-color: var(--bg-color);
     position: fixed;
     top: 0;
     width: 100%;
@@ -163,7 +160,7 @@ nav span p:hover{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7), -5px 5px 15px rgba(0, 0, 0, 0.7);
 }
 .opening-img{
-    z-index: -1;
+    z-index: 3;
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -176,9 +173,13 @@ nav span p:hover{
     box-shadow: inset 4px 4px 30px black;
     background-color: rgba(0, 0, 0, 0.7);
     padding-bottom: 0.5rem;
-    width: 100vw;
-    animation: falling 0.8s ease-in-out forwards
+    width: 100%;
+    animation: falling 0.8s ease-in-out forwards;
+    position: absolute;
+    top: 55%;
+    z-index: 4;
 }
+
 @keyframes falling{
     0%{
         transform: translate(0%, -200%);
@@ -187,20 +188,11 @@ nav span p:hover{
         transform: translate(0%, 0%);
     }
 }
-/* .opening-main-text, .opening-secondary-text{
-    text-shadow: 
-        10px 10px 30px  black, 
-        10px -10px 30px  black,
-        -10px 10px 30px  black, 
-        -10px -10px 30px  black;;
-} */
 .opening-main-text{
-    margin-top: 20rem;
     font-size: 2.5rem;
     text-align: right;
     padding-right: 5rem;
     animation: falling 1s ease-in-out forwards;
-    /* animation-delay: 1s; */
 }
 .opening-main-text p, .opening-main-text h1, .opening-secondary-text p{
     animation: falling 1.2s ease-in-out forwards;
@@ -228,6 +220,7 @@ nav span p:hover{
 .about-left-div{
     opacity: 0;
     text-shadow: 3px 3px 25px black;
+    padding-top: 3rem;
 }
 .about-left-div h2, .about-left-div p{
     padding: 0 2rem ;
@@ -265,12 +258,11 @@ nav span p:hover{
     transform: translate(-50%, -50%);
     top: 52%;
     left: 50%;
-    /* animation: animate 2s linear forwards; */
 }
 
 /* products and services */
 .products-and-services{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin: 0;
     box-shadow: inset 5px 5px 30px rgba(0, 0, 0, 0.575);
@@ -289,7 +281,6 @@ nav span p:hover{
     display: flex;
     justify-content: center;
     padding: 0 5%;
-    
 }
 .item{
     box-shadow: 5px 5px 0px black;
@@ -298,6 +289,7 @@ nav span p:hover{
     text-align: center;
     height: fit-content;
     width: 100%;
+    opacity: 0;
 }
 .item:hover h3{
     border-bottom-color: black;
@@ -329,7 +321,6 @@ nav span p:hover{
     padding-bottom: 0.2rem;
     width: 75%;
     margin-bottom: 0.5rem;
-
 }
 .items-control-div{
     display: grid;
@@ -389,6 +380,7 @@ nav span p:hover{
     border-left: solid 10px black;
     border-right: solid 10px black;
 }
+
 /* contact section */
 .contact-section{
     width: 100%;
@@ -427,8 +419,6 @@ nav span p:hover{
 }
 .contact-right-div{
     height: 90%;
-    /* CHANGE THE OVERALL DIV LINEAR GRADIENT INSTEAD */
-    /* background: linear-gradient(90deg, black 0% , black 15%, rgb(12, 12, 12),rgb(20, 20, 20), black); */
 }
 .text-info{
     border-left: solid white 1px;
@@ -497,15 +487,12 @@ nav span p:hover{
     box-shadow: 5px 0px 5px black;
 }
 @keyframes work-hours-animation {
-    /* 0%{
-
-    } */
     100%{
         transform: translate(-50%, -50%);
         opacity: 1;
     }
 }
-/*  */
+
 .back-to-the-top-btn{
     font-size: 1rem;
     background-color: white;
@@ -526,13 +513,8 @@ footer p{
 
 
 /* js triggered animations */
-
-.item{
-    opacity: 0;
-}
 .item-jumpers{
     animation: item-jumper 0.75s ease-out forwards; 
-    /* opacity: 0; */
 }
 .item-02{
     animation-delay: 0.1s;
@@ -562,7 +544,6 @@ footer p{
 .p-03{
     animation-delay: 0.2s;
 }
-/* probably remove that and the class from the html (text-info-p) */
 .text-info-p{
     opacity: 0;
 }
@@ -574,12 +555,10 @@ footer p{
     0%{
         transform: translate(50%, 0%);
         opacity: 0;
-        /* color: red; */
     }
     100%{
         transform: translate(0%, 0%);
         opacity: 1;
-        /* color: white; */
     }
 }
 .contact-img{
@@ -615,6 +594,7 @@ footer p{
         text-shadow: none;
     }
 }
+
 /* product window styles */
 .products-window{
     position: fixed;
@@ -668,8 +648,6 @@ footer p{
     width: 50%;
 }
 .product-item-wrapper{
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-rows: 2;
     height: 65%;
     overflow-y: auto;
@@ -690,7 +668,6 @@ footer p{
     background-color: rgb(245, 245, 245);
 }
 .product-item h4:first-of-type{
-    /* color: red; */
     margin: 0;
     font-size: 1.5rem;
     margin: 0.6rem 0 0 0
@@ -699,8 +676,6 @@ footer p{
     font-size: 1.1rem;
     margin: 0.5rem auto 0 auto;
     font-weight: normal;
-    /* border-bottom: solid 1px black; */
-    /* width: 75%; */
 }
 .product-item p{
     font-size: 1.1rem;
@@ -715,7 +690,6 @@ footer p{
     display: block;
     height: 10rem;
     object-fit: cover;
-    /* border-bottom: solid 1px rgb(0, 0, 0); */
 }
 .product-item hr:first-of-type{
     width: 90%;
@@ -741,17 +715,12 @@ footer p{
     padding: 0.2rem 0;
 }
 
-/* NO MEMDIA QUERIES FOR OVER 1100 / 650 */
-
 .work-schedule-wrapper{
-    /* border-bottom: solid 0.5rem black; */
     width: 100%;
     height: 0rem;
-    /* background-color: rgb(207, 207, 207); */
     transition: 100ms;
     display: none;
     text-align: center;
-    /* padding-top: 1rem; */
     background: linear-gradient(90deg, black 0%, black 20%, rgb(0, 0, 0) 20%,rgb(0, 0, 0) 80%, black 80%, black 100%);
 }
 .work-schedule-wrapper table{
@@ -772,23 +741,6 @@ footer p{
 .work-schedule-wrapper table tr td:first-of-type{
     padding-right: 2.5rem;
 }
-.work-schedule-wrapper button{
-    opacity: 0;
-    animation: table-appearing 200ms ease-in forwards;
-    font-size: 1.1rem;
-    transform: translate(50%, -150%);
-    background-color: white;
-    border: solid 1px black;
-    padding: 0.3rem 2rem 0.1rem 2rem;
-    margin: 0;
-    transition: 250ms;
-    cursor: pointer;
-}
-.work-schedule-wrapper button:hover{
-    background-color: black;
-    color: white;
-    border-color: white;
-}
 @keyframes table-appearing{
     50%{
         opacity: 0;
@@ -798,10 +750,11 @@ footer p{
     }
 }
 
-
-
 .mobile-nav{
+    transition: 500ms;
+    border-bottom: solid 2px black;
     display: none;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5), -10px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .products-and-services-mobile{
     display: none;
@@ -809,11 +762,62 @@ footer p{
 .contact-section-mobile{
     display: none;
 }
+
+/* JAVASCRIPT ANIMATION TRIGGERS HERE */
+/* [...] */
+
+/* ALL ANIMATIONS HERE */
+/* [...] */
+
 /* MEDIA QUERIES, OTHER SCREEN SIZES CSS HERE: */
-
-/* last one: 1025 */
-
-@media only screen and (min-width: 320px) and (max-width: 450px) and (max-height: 1000px){ /* and 650px on the y axis */ 
+.mobile-nav-container{
+    display: none;
+    background-color: rgb(255, 255, 255);
+    border-right: solid 10px rgb(27, 27, 27);
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    /* left: calc(0% + 30vw); */
+    z-index: 20;
+    width: 60vw;
+    height: 102vh;
+    text-align: center;
+    box-shadow: 
+        inset 10px 10px 25px rgba(0, 0, 0, 0.616), 
+        inset -10px -10px 25px rgba(0, 0, 0, 0.493);
+    animation: mobile-slider 0.25s ease-in-out forwards;
+    transition: 250ms;
+}
+@keyframes mobile-slider {
+    0%{
+        left:  calc(0% - 30vw);
+    }
+    100%{
+        left: calc(0% + 30vw);
+    }
+}
+.mobile-nav-container h1{
+    margin-top: 3rem;
+    font-size: 2.3rem;
+}
+.mobile-nav-container p{
+    font-size: 1.5rem;
+}
+.mobile-nav-container hr{
+    width: 75%;
+    margin: 0.5rem auto 1.5rem auto;
+    border-color: black;
+}
+.mobile-nav-container hr:nth-of-type(2){
+    width: 60%;
+}
+.mobile-nav-container button{
+    width: 60%;
+    font-size: 1.1rem;
+    border: solid 1px black;
+    background-color: white;
+}
+@media only screen and (max-width: 450px) and (max-height: 1000px){
     html::-webkit-scrollbar, html * ::-webkit-scrollbar{
         display: none;
     }
@@ -839,7 +843,8 @@ footer p{
         width: 100%;
         height: fit-content;
         background-color: white;
-        padding: 0.7rem 0 0.2rem 0.6rem
+        padding: 0.7rem 0 0.2rem 0.6rem;
+        z-index: 10;
     }
     .mobile-nav img{
         width: 2.5rem;
@@ -854,32 +859,35 @@ footer p{
         margin-left: 0.5rem;
     }
     section{
-        border: solid 1px black
+        border: solid 1px black;
+        overflow-x: hidden;
     }
-    /* opening section */
 
+    /* opening section */
     .opening-main-text{
-        margin-top: 17rem;
         text-align: left;
         padding-left: 1rem;
         padding-right: 0;
+        padding: 0;
+        margin-left: 1rem;
     }
     .opening-main-text p{
         margin-top: 0.5rem;
-        font-size: 2.2rem;
+        font-size: 1.2rem;
     }
     .opening-main-text h1{
         padding-top: 1rem;
         font-size: 3rem;
     }
-    .opening-main-text p{
-        font-size: 1.2rem;
-    }
     .opening-secondary-text{
         text-align: right;
-        margin: 2rem 1rem 0.5rem auto;
+        margin: 2rem 1.5rem 0.5rem auto;
         padding-left: 0;
         font-size: 1.3rem;
+    }
+    .opening-texts-wrapper{
+        width: 100%;
+        top: 40%;
     }
 
     /* .about section */
@@ -890,6 +898,9 @@ footer p{
         box-shadow: inset 5px 5px 20px gray;
         margin: 0;
         overflow: hidden;
+    }
+    .about-left-div{
+        padding-top: 0;
     }
     .about-left-div h2, .about-left-div p{
         padding: 0 2rem ;
@@ -912,6 +923,7 @@ footer p{
         font-size: 1.2rem;
         padding: 0.2rem 2rem;
         background-color: white;
+        margin-bottom: 2.5rem;
     }
     .about-right-div{
         display: none;
@@ -963,6 +975,7 @@ footer p{
         border: solid 1px black;
         margin: 0.5rem auto;
     }
+
     /* contact section */
     .contact-section{
         display: none;
@@ -971,15 +984,13 @@ footer p{
         display: block;
         background-color: rgb(20, 20, 20);
         color: white;
-        min-height: 100vh;
-        /* padding-top: 10rem; */
+        height: fit-content;
     }
     .contact-section-mobile h4{
         font-size: 1.4rem;
         margin: 1rem 0 0.5rem 1.5rem;
     }
     .contact-section-mobile ul{
-        /* padding-top: 4rem; */
         margin-top: 3rem;
         font-size: 1.5rem;
         color: rgb(255, 0, 0);
@@ -1001,11 +1012,7 @@ footer p{
     }
     .contact-section-mobile table{
         border: solid 1px white;
-        width: 100%;
-        /* margin-top: 3rem; */
-    }
-    .contact-section-mobile table td:first-of-type{
-        /* width: 75%; */
+        width: 100%
     }
     .contact-section-mobile table td{
         border-bottom: solid 1px white;
@@ -1032,7 +1039,7 @@ footer p{
         padding: 0.1rem 3rem
     }
 }
-@media only screen and (min-width: 450px) and (max-width: 1100px) and (min-height: 1000px){
+@media only screen and (min-width: 450px) and (max-width: 1100px){
     html::-webkit-scrollbar, html * ::-webkit-scrollbar{
         display: none;
     }
@@ -1058,7 +1065,8 @@ footer p{
         width: 100%;
         height: fit-content;
         background-color: white;
-        padding: 0.7rem 0 0.2rem 0.6rem
+        padding: 0.7rem 0 0.2rem 0.6rem;
+        z-index: 10;
     }
     .mobile-nav img{
         width: 2.5rem;
@@ -1075,10 +1083,12 @@ footer p{
     section{
         border: solid 1px black
     }
-    /* opening section */
 
+    /* opening section */
+    .opening-section{
+        z-index: 2;
+    }
     .opening-main-text{
-        margin-top: 30rem;
         text-align: left;
         padding-left: 2.5rem;
         padding-right: 0;
@@ -1109,7 +1119,6 @@ footer p{
         box-shadow: inset 5px 5px 20px gray;
         margin: 0;
         overflow: hidden;
-        height: fit-content;
         padding-bottom: 4rem;
     }
     .about-left-div h2, .about-left-div p{
@@ -1195,17 +1204,14 @@ footer p{
         display: block;
         background-color: rgb(20, 20, 20);
         color: white;
-        /* min-height: 100vh; */
         height: fit-content;
         padding-bottom: 1rem
-        /* padding-top: 10rem; */
     }
     .contact-section-mobile h4{
         font-size: 1.5rem;
         margin: 1rem 0 0.5rem 1.5rem;
     }
     .contact-section-mobile ul{
-        /* padding-top: 4rem; */
         margin-top: 3rem;
         font-size: 1.7rem;
         color: rgb(255, 0, 0);
@@ -1228,10 +1234,6 @@ footer p{
     .contact-section-mobile table{
         border: solid 1px white;
         width: 100%;
-        /* margin-top: 3rem; */
-    }
-    .contact-section-mobile table td:first-of-type{
-        /* width: 75%; */
     }
     .contact-section-mobile table td{
         border-bottom: solid 1px white;
@@ -1256,5 +1258,65 @@ footer p{
         background-color: white;
         border: solid 2px white;
         padding: 0.1rem 3rem
+    }
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+    .about-section, .contact-section, .products-and-services{
+        min-height: fit-content;
+        height: fit-content;
+    }
+    .about-section button, .items-control-div{
+        margin-bottom: 5rem;
+    }
+.back-to-the-top-btn{
+    margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (min-width : 1450px){
+    main, .opening-img, nav, .opening-texts-wrapper{
+        width: 75%;
+    }
+
+    main{
+        margin: 0 auto; 
+    }
+}
+
+@media only screen and (min-width : 1700px){
+    main, .opening-img, nav, .opening-texts-wrapper{
+        width: 60%;
+    }
+
+    main{
+        margin: 0 auto; 
+        background-color: white;
+    }
+}
+
+
+@media only screen and (min-width : 2050px){
+    main, .opening-img, nav, .opening-texts-wrapper{
+        width: 50%;
+    }
+
+    main{
+        margin: 0 auto; 
+        background-color: white;
+    }
+}
+
+@media only screen and (min-width : 2550px){
+    main, .opening-img, nav, .opening-texts-wrapper{
+        width: 40%;
+    }
+
+    main{
+        margin: 0 auto; 
+        background-color: white;
     }
 }
