@@ -252,13 +252,16 @@ function mobileNavClosing(){
     mobileNavContainer.style.display = 'none'
     mobileNavContainer.style.transform = 'translate(-50%, -50%)'
   }, 250)
-
+  
+  document.querySelector('html').style.overflowY = 'auto'
 }
 
 
 
 mobileNavImg.addEventListener('click', ()=>{
   mobileNavContainer.style.display = 'block'
+  // mobileNavContainer.style.color = 'red'
+  document.querySelector('html').style.overflowY = 'hidden'
 })
 
 mobileNavCloseBtn.addEventListener('click', ()=>{
