@@ -789,7 +789,7 @@ footer p{
     transition: 250ms;
 }
 .mobile-nav-container h1{
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     font-size: 2.3rem;
 }
 .mobile-nav-container p{
@@ -797,10 +797,14 @@ footer p{
 }
 .mobile-nav-container hr{
     width: 75%;
-    margin: 1.5rem auto 1.5rem auto;
+    margin: 5rem auto 1.5rem auto;
     border-color: black;
 }
+.mobile-nav-container hr:last-of-type{
+    margin: 2.5rem auto 1.5rem auto;
+}
 .mobile-nav-container hr:nth-of-type(2){
+    margin: 2rem auto;
     width: 60%;
 }
 .mobile-nav-container button{
