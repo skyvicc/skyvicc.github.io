@@ -47,6 +47,7 @@ const mobNavHome = document.querySelector('.mob-nav-home')
 const mobNavAbout = document.querySelector('.mob-nav-about')
 const mobNavProducts = document.querySelector('.mob-nav-products')
 const mobNavContact = document.querySelector('.mob-nav-contact')
+const mobContinueBtn = document.querySelector('.mob-continue-btn')
 // [. . .]
 
 // OTHER VARIABLES
@@ -227,6 +228,9 @@ mobNavContact.addEventListener('click', ()=>{
 })
 mobBackTop.addEventListener('click', ()=>{
   sectionOpening.scrollIntoView()
+})
+mobContinueBtn.addEventListener('click', ()=>{
+  sectionMobProductsServices.scrollIntoView()
 })
 // [. . .]
 
