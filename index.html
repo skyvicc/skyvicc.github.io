@@ -6,9 +6,9 @@
     <title>BookStore</title>
     <link rel="stylesheet" href="styles/index.css" />
 </head>
-<body>
-
+    <body>
         <main>
+            <!-- nav bar -->
             <nav>
                 <span class="buisnes"><h1>Book store</h1></span>
                 <span>
@@ -18,6 +18,7 @@
                     <p class="nav-destination">Contact</p>
                 </span>
             </nav>
+            <!-- nav bar mobile version -->
             <div class="mobile-nav">
                 <img src="images/lines.png" class="mobile-nav-lines"/>
                 <h1>Book Store</h1>
@@ -39,7 +40,6 @@
             <section class="opening-section">
                 <img src="images/openingImage.jpg" alt="" class="opening-img" />
                 <div class="opening-text">
-
                     <div class="opening-texts-wrapper">
                         <div class="opening-main-text">
                             <h1>Corner Book Stores</h1>
@@ -60,6 +60,7 @@
                     </p>
                     <hr />
                     <button class="continue-btn">Continue</button>
+                    <button class="mob-continue-btn">Continue</button>
                 </div>
                 <div class="about-right-div">
                     <img src="images/inside-sec.jpg" alt=""/>
@@ -101,8 +102,7 @@
                     </div>
                     <div class="item item-05">
                         <h3>Note Books</h3>
-                        <img src="images/product-notebook.jpg" alt="" />
-                        <hr />
+                        <img src="images/product-notebook.jpg" alt="" />                        <hr />
                         <p>Total items: 100</p>
                         <button class="view-all-btn">View All</button>
                     </div>
@@ -120,7 +120,6 @@
                         <p>Total items: 100</p>
                         <button class="view-all-btn">View All</button>
                     </div>
-                    </div>
                 </div>
                 <div class="items-control-div">
                     <div class="dot-wrapper">
@@ -135,34 +134,34 @@
                     <div class="items-view-control-div">
                         <button class="prev-btn">Previous</button>
                         <div class="full-inventory-div-wrapper">
-                            <hr />
-                            <button>View Full Inventory</button>
-                            <hr />
-                        </div>
-                        <button class="next-btn">Next</button>
+                        <hr />
+                        <button>View Full Inventory</button>
+                        <hr />
+                    </div>
+                    <button class="next-btn">Next</button> <!-- potential bug here check it out -->
                     </div>
                 </div>
             </section>
             <section class="products-and-services-mobile">
-            <div class="item-mobile">
-                <img src="images/product-pen.jpg" />
-                <p>Γραφική Ύλη</p>
-                <button>Ανοιγμα</button>
-                <hr />
-            </div>
-            <div class="item-mobile">
-                <img src="images/product-notebook.jpg" />
-                <p>Σημειωματάρια</p>
-                <button>Ανοιγμα</button>
-                <hr />
-            </div>
-            <div class="item-mobile">
-                <img src="images/service-copies.jpg" />
-                <p>Φωτοτυπίες</p>
-                <button>Ανοιγμα</button>
-                <hr />
-            </div>
-        </section>
+                <div class="item-mobile">
+                    <img src="images/product-pen.jpg" />
+                    <p>Γραφική Ύλη</p>
+                    <button>Ανοιγμα</button>
+                    <hr />
+                </div>
+                <div class="item-mobile">
+                    <img src="images/product-notebook.jpg" />
+                    <p>Σημειωματάρια</p>
+                    <button>Ανοιγμα</button>
+                    <hr />
+                </div>
+                <div class="item-mobile">
+                    <img src="images/service-copies.jpg" />
+                    <p>Φωτοτυπίες</p>
+                    <button>Ανοιγμα</button>
+                    <hr />
+                </div>
+            </section>
             <section class="contact-section">
                 <h2>Find Us</h2>
                 <hr />
@@ -179,7 +178,6 @@
                             <h3>Email adress:</h3>
                             <span><p class="text-info-p p-03">example@gmail.com</p></span>
                         </div>
-
                         <div class="contact-right-div-bottom">
                             <div class="contact-button-wrapper"><button class="view-schedule-btn">View schedule</button></div>
                             <div class="social-media-div">
@@ -262,8 +260,7 @@
                         <hr />
                         <p>Price: <span>0.99€</span></p>
                     </div>
-                    <!--  -->
-                    
+                    <!--  -->    
                     <div class="product-item">
                         <h4>Pilot pen</h4>
                         <img src="images/pen.jpeg" alt=""/>
@@ -289,8 +286,6 @@
                         <p>Price: <span>0.99€</span></p>
                     </div>
                 </div>
-
-
                 <div class="general-product-listing pencils">
                     <div class="product-item">
                         <h4>Stadler pencil</h4>
@@ -341,16 +336,14 @@
                         <p>Price: <span>0.39€</span></p>
                     </div>
                     <!--  -->
-
                 </div>
-
             </div>
             <hr class="product-item-hr"/>
             <div class="bottom-btn-wrapper-div">
-                <button class="product-window-close-btn">Close</button>
-                <button>Next item</button>
+            <button class="product-window-close-btn">Close</button>
+            <button>Next item</button>
             </div>
         </div>
-</body>
+    </body>
 <script src="functionality/index.js"></script>
 </html>
