@@ -1,0 +1,17 @@
+html{
+    background: linear-gradient(120deg, rgb(44, 44, 44), black, rgb(33, 33, 33))
+}
+.container{
+    /* border: solid 1px red */
+}
+.inner-container{
+    background-color: rgb(233, 233, 233);
+    border: solid 1px rgb(39, 2, 98);
+    width: fit-content;
+    margin: 1.5rem auto;
+    padding: 4rem 5rem;
+    text-align: center;
+}
+ul{
+    text-align: left;
+}
