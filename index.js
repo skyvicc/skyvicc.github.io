@@ -1779,7 +1779,8 @@ for(let i = 0; i < data.length; i++){
     <div class="container-txt">
       <ul>
       <li><span>Species Type Label: </span>${data[i].attributes.sptype_label}</li>
-      <li><span> Species Type</span>${data[i].attributes.sptype}</li>
+      <li><span> Species Type: </span>${data[i].attributes.sptype}</li>
+      <li><span>Species Name: </span>${data[i].attributes.speciesname}</li>
       <li><span>Bioregion: </span>${data[i].attributes.bioregion}</li>
       <li><span>Common Name: </span>${data[i].attributes.commonname}</li>
       <li><span>Population Type Label: </span>${data[i].attributes.population_type_label}</li>
