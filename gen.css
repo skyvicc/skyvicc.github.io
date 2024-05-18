@@ -1,0 +1,31 @@
+html{
+    background: linear-gradient(120deg, rgb(44, 44, 44), black, rgb(33, 33, 33))
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+p{
+    background-color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+.inner-container{
+    background-color: rgb(233, 233, 233);
+    border: solid 1px rgb(39, 2, 98);
+    width: fit-content;
+    margin: 1.5rem auto;
+    padding: 4rem 5rem;
+    text-align: center;
+}
+ul{
+    text-align: left;
+}
+span{
+    font-weight: bolder;
+    margin-right: 0.5rem;
+}
