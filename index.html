@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Animals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <img src="images/wall.jpg" alt="" class="bg-img">
+        <h1>Ζώα στο Δάσος</h1>
+        <!-- <section class="windows-container"> -->
+            <div class="container container-animals">
+                <div class="img-container">                
+                    <img src="images/mainfox.jpg" alt="" class="container-img">
+                </div>
+                <div class="lebeling">
+                    <h3>Οι κάτοικοι του δάσους</h3>
+                    <p>Γνωρίστε τα ζώα του δάσους του Χορτιάτη</p>
+                </div>
+            </div>
+            <div class="container container-animals"></div>
+        <!-- </section> -->
+    </main>
+</body>
+<script>
+    const containerAnimals = document.querySelector('.container-animals')
+    containerAnimals.addEventListener('click', ()=>{
+        window.location = 'panel01.html'
+    })
+</script>
+</html>
